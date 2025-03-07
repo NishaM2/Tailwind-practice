@@ -1,15 +1,13 @@
-import { useState } from 'react'
+
 import './App.css'
+import { RevenueCard } from './components/RevenueCard'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className='grid grid-cols-1 md:grid-cols-3'>
-      <div className='bg-red-500'>hi</div>
-      <div className='bg-pink-500'>hi</div>
-      <div className='bg-blue-500'>hi</div>
-   </div>
+    <div className='grid grid-cols-3'>
+      <RevenueCard title={"Amount pending"} amount={"92,312.20"} orderCount={13}/>
+    </div>
   )
 }
 
