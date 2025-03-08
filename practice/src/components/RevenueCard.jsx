@@ -5,7 +5,7 @@ export const RevenueCard = ({
     amount
 }) => { 
     return <div className="bg-white rounded shadow-sm p-4">
-            <div className="text-gray-700 flex justify-center flex-col">
+            <div className="text-gray-700 flex justify-center flex-col hover:bg-red-100">
                 <div className="flex">
                     <div>
                         {title}
@@ -18,7 +18,7 @@ export const RevenueCard = ({
                 </div>
             </div>
             <div className="flex justify-between pt-2">
-                <div>
+                <div className="font-semibold text-2xl">
                     ₹ {amount}
                 </div>
                 {orderCount ? <div className="flex cursor-pointer underline font-medium flex flex-col justify-center">
